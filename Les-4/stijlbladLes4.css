@@ -1,0 +1,33 @@
+body {
+    background-image: url("../img/snow.jpg");
+    background-repeat: round;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid pink;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+h2 {
+    font-family: Verdana;
+    color: crimson;
+}
+
+p {
+    font-family: Verdana;
+}
+
+div {
+    background-color: lightcyan;
+    width: 300px;
+    border: 8px solid pink;
+    padding: 51px;
+    margin: auto;
+}
