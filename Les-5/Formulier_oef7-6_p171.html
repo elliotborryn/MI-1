@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="beschrijving van de webpagina">
+    <meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+    <meta name="viewport" content="width=device-width, height=device-height" />
+    <title>tabel en formulier</title>
+
+    <!-- STYLE SHEET CSS -->
+
+
+    <style>
+
+    </style>
+
+</head>
+
+<!-- START OF THE BODY -->
+
+<body>
+
+    <h1>Persoonlijke Voorkeuren</h1>
+    <form action="Formulier_oef7-6_p171.php" method="get">
+        <fieldset>
+            <legend>Mijn Voorkeuren</legend>
+
+            <!-- Lievelingskleur -->
+            <lable for="Naam">Lievelingskleur</lable>
+            <input type="text" id="naam" name="naam">
+            <br>
+
+            <!-- Favoriete Seizoen -->
+            <lable for="favo_seiz">Favoriete Seizoen</lable>
+            <input type="radio" id="lente" name="lente">Lente</input>
+            <input type="radio" id="zomer" name="zomer">Zomer</input>
+            <input type="radio" id="herfst" name="herfst">Herfst</input>
+            <input type="radio" id="winter" name="winter">Winter</input>
+            <br>
+
+            <!-- Favoriete Maand VH Jaar -->
+            <lable for="favo_month">Favoriete maand van het jaar</lable>
+            <select id="favo_month" name="favo_month">
+                <option disabled>Kies</option>
+                <option value="Januari">Januari</option>
+                <option value="Februari">Februari</option>
+                <option value="Maart">Maart</option>
+                <option value="April">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Juni">Juni</option>
+                <option value="Juli">Juli</option>
+                <option value="Augustus">Augustus</option>
+                <option value="September">September</option>
+                <option value="Oktober">Oktober</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <br>
+
+            <!-- Ik vind mezelf -->
+            <label for="mezelf">Ik vind mezelf </label>
+            <input type="checkbox" id="vriendelijk" name="vriendelijk">vriendelijk</input>
+            <input type="checkbox" id="sportief" name="sportief">sportief</input>
+            <input type="checkbox" id="energiek" name="energiek">energiek</input>
+            <input type="checkbox" id="leergierig" name="leergierig">leergierig</input>
+            <br>
+            <!-- Mening kolom, eigen tekst -->
+            <p>Als ik een avond vrij heb, dan...</p>
+            <textarea id="mening" cols="25" rows="10">Ga ik...</textarea>
+            <br>
+        </fieldset>
+
+        <!-- Formulier Ingevuld submit button -->
+        <form action="Formulier_oef7-6_p171.php" method="get">
+            <fieldset>
+                <legend>Formulier Ingevuld</legend>
+                <input id="submit" type="submit" value="Versturen" />
+
+            </fieldset>
+        </form>
+
+</body>
+
+</html>
