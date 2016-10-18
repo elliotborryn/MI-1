@@ -1,0 +1,23 @@
+th {
+    color: white
+}
+
+tr {
+    color: white
+}
+
+p {
+    color: white;
+    font-family: Comic Sans Ms
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Comic Sans Ms
+}
+
+img {
+    src: url(now-you-see-me-2-poster.jpg);
+    vertical-align: middle;
+}
