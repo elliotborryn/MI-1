@@ -1,0 +1,19 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana;
+}
+
+h2 {
+    font-family: Verdana;
+    color: crimson;
+}
+
+p {
+    font-family: Verdana;
+}
