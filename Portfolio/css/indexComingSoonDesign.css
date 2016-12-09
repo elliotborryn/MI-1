@@ -1,0 +1,105 @@
+h1{
+    color: white;
+    font-family: "Caviar Dreams", sans-serif;
+    text-align: center;
+    margin-top: 18%;
+    font-size: 5em;
+    text-shadow: 5px 5px 5px black;
+}
+
+h3 {
+    color: white;
+    font-family: "Caviar Dreams", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px black;
+}
+
+img.bg {
+			/* Set rules to fill background */
+			min-height: 100%;
+			min-width: 1024px;
+            z-index: -1;
+			
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+			
+			/* Set up positioning */
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		
+		@media screen and (max-width: 1024px){
+			img.bg {
+				left: 50%;
+				margin-left: -512px; }
+		}
+		
+		#page-wrap { position: relative; width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+
+
+/* --------------------- */
+.homePage {
+    color: darkblue;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.homePageBody {
+    background-color: white;
+    opacity: 50%;
+    /* background-image: url(../img/blur4.png); */
+}
+
+.homePageImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 2px;
+    
+    width: 50%;
+    height: auto;
+}
+.button_lang {
+    margin: auto;
+    display: inline;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-family: Verdana;
+    float: none;
+    border: 1px solid black;
+   
+}
+.button_NL {
+    padding: 12px 35px;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+#btn a {
+    text-decoration: none;
+}
+.button_FR {
+    padding: 12px 28px;
+}
+
+.button_lang:hover {
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 1);
+    
+}
+/* .button_NL:hover {
+    box-shadow: 0.5px 0.5px 5px ;
+}*/
+
+/*
+.button_FR:hover {
+    box-shadow: 0.5px 0.5px 5px ;
+}*/
+
+#btn {
+    text-align: center;
+}
