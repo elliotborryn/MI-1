@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="beschrijving van de webpagina">
+    <meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title Icon of Favicon -->
+    <link rel="shortcut icon" href="img/EasyInstallLogoBE.png">
+    <!-- CSS SHEET -->
+    <link type="text/css" rel="stylesheet" href="css/EasyInstallDesign.css">
+    <title>Easy Install: Photos</title>
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body class="body">
+
+    <!-- MAIN HEADER -->
+    <header class="mainHeader">
+        <img src="img/EasyInstallBE.png">
+        <nav>
+            <ul id="menu1">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="aPropos.html">A propos</a></li>
+                <li><a href="contactFR.html">Contact</a></li>
+                <li><a href="prix.html">Prix</a></li>
+                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a class="active" href="photos.html">Photos</a></li>
+            </ul>
+
+          
+        </nav>
+    </header>
+    <!-- END MAIN HEADER -->
+
+    <!-- SLIDE SHOW -->
+    <div class="slideShow">
+        <img class="mySlides" src="img/GreenGrass.jpg" style="width:100%">
+        <img class="mySlides" src="img/NightWater.jpg" style="width:100%">
+        <img class="mySlides" src="img/RedDragon.jpg" style="width:100%">
+    </div>
+    
+    <div class="slideShowBtn">
+        <button class="prevBtn" onclick="plusDivs(-1)">❮ Précédent</button>
+        <button class="nextBtn" onclick="plusDivs(1)">Suivant ❯</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <!-- END SLIDE SHOW -->
+
+
+    <!-- FOOTER -->
+
+    <footer class="mainFooter">
+        <p>Copyright &copy;<a href="index.html" title="Easy Install">Easy Install</a></p>
+    </footer>
+</body>
+
+</html>
