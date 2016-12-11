@@ -1,3 +1,7 @@
+.mainBody {
+    width: 70%;
+}
+
 h1{
     color: white;
     font-family: "Caviar Dreams", sans-serif;
@@ -56,10 +60,10 @@ img.bg {
 
 .homePageImg {
     display: block;
-    margin-left: auto;
+    margin-left: 18%;
     margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 2px;
+    margin-top: 5%;
+    /*margin-bottom: %;*/
     
     width: 50%;
     height: auto;
@@ -77,7 +81,8 @@ img.bg {
 }
 .button_NL {
     padding: 12px 35px;
-    margin-right: 5%;
+    margin-right: 20%;
+    margin-left: 25%;
     margin-top: 2%;
 }
 #btn a {
@@ -102,4 +107,21 @@ img.bg {
 
 #btn {
     text-align: center;
+    margin-top: 27%;
+}
+
+#cs {
+    margin-top: 1.5%;
+    margin-left: -12%;
+}
+
+#jpn {
+    margin-top: -1%;
+    margin-left: 5%;
+}
+
+#line {
+    margin: auto;
+    width: 45%;
+    margin-left: 25%;
 }
