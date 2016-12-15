@@ -1,0 +1,127 @@
+/*-------------------------------------------------------- Les_8_kolommen --------------------------------------------- */
+
+body {
+    background-color: #2C2525;
+}
+
+.kolom1 {
+    border-style: solid;
+    border-color: cyan;
+    padding-bottom: 35%;
+    border-width: 10px;
+    width: 45%;
+    float: left;
+    margin-left: -0.6%;
+    padding-left: 0;
+    clear: left;
+}
+
+.kolom2 {
+    border-style: solid;
+    border-color: red;
+    padding-bottom: 35%;
+    border-width: 10px;
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+}
+
+footer {
+    border-style: solid;
+    border-color: lime;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    border-width: 10px;
+    width: 45%;
+    float: left;
+    margin-left: -0.6%;
+    padding-left: 0;
+    clear: left;
+}
+
+/* ------------------------------------ les_8_oef2 ----------------------------------- */
+
+.box1 {
+    position: absolute;
+	height:600px;
+	width:600px;
+	top:100px;
+	left:300px;
+	right:300px;
+	background-color: #474747;	
+}
+
+.inBox {
+    text-align: center;
+    font-size: 2em;
+}
+
+.frontBox {
+    position: absolute;
+	height:600px;
+	width:600px;
+	top:0px;
+	left:0px;
+	right:300px;
+	background-color: #474747;	
+}
+
+.frontBox:hover, .box1:hover {
+    background-color: transparent;
+}
+
+/*
+.inBox1:hover {
+    background-color: deeppink;
+}
+
+.inBox1:hover {
+    background-color: white;
+}
+
+.inBox2:hover {
+    background-color: magenta;
+}
+
+.inBox4:hover {
+    background-color: darkorange;
+}
+*/
+
+.inBox1{
+    position: absolute;
+	top:0px;
+	left:0px;
+	height:200px;
+	width:200px;
+	background-color: yellow;
+}
+
+.inBox2{
+    position: absolute;
+	top:0px;
+	right:0px;
+	height:200px;
+	width:200px;
+	background-color: lime;
+    
+}
+
+.inBox3{
+    position: absolute;
+	right:400px;
+	bottom:0px;
+	height:200px;
+	width:200px;
+	background-color: cyan;
+    
+}
+
+.inBox4{
+    position: absolute;
+	left:400px;
+	bottom:0px;
+	height:200px;
+	width:200px;
+	background-color: red;
+}
