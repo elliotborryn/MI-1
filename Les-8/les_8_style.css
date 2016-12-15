@@ -7,13 +7,26 @@ body {
 .kolom1 {
     border-style: solid;
     border-color: cyan;
-    padding-bottom: 35%;
+    padding-bottom: 25.4%;
     border-width: 10px;
     width: 45%;
     float: left;
     margin-left: -0.6%;
     padding-left: 0;
     clear: left;
+}
+
+.kolom1 ul {
+    color: white;
+}
+
+.kolom1 ul a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.kolom1 ul li {
+    padding: 5px;
 }
 
 .kolom2 {
