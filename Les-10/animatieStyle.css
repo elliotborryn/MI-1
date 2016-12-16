@@ -1,0 +1,71 @@
+.animatie {
+
+	background-color: red;
+	position: relative;
+	width: 60px;
+    height: 60px;
+	
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: opening-sequence;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite; /*In commentaar zetten als je wilt dat het maar 1 keer gebeurt. */
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+	animation-name: opening-sequence;
+	animation-duration: 10s;
+	animation-iteration-count: infinite; /*In commentaar zetten als je wilt dat het maar 1 keer gebeurt. */
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+
+
+/* Chrome, Safari, Opera 
+@-webkit-keyframes opening-sequence {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  50%{
+    top: -100px;
+    
+  }
+  
+  100% {
+    left: 80%;
+    top: 0px;
+  }
+}*/
+
+/* Standard syntax */
+@keyframes opening-sequence {
+    0%   {
+        background-color:red; 
+        left:0px; 
+        top:0px;
+    }
+    
+    25%  {
+        background-color:yellow; 
+        left: 96%; 
+        top:0px;
+    }
+    
+    50%  {
+        background-color:blue; 
+        left:96%; 
+        top:660px;
+    }
+    
+    75%  {
+        background-color:green; 
+        left:0px; 
+        top:660px;
+    }
+    
+    100% {
+        background-color:red; 
+        left:0px; 
+        top:0px;
+    }
+}
