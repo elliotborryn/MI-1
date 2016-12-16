@@ -1,0 +1,130 @@
+.transitie1 p {
+	transition-property: background-color;
+	transition-duration: 5s;
+	background-color: blue;
+    padding: 5px 5px;
+}
+
+.transitie1 p:hover {
+	color:white;
+	background-color: lime;
+}
+
+/*---------------------------------------------------------------------------------------------------- */
+.transitie2 p {
+	transition-property: background-color, color;
+	transition-duration: 2s,800ms;
+	background-color: blue;
+    padding: 5px 5px;
+}
+
+.transitie2 p:hover {
+	color:white;
+	background-color: lime;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+.transitieTiming {
+	transition-property: left; 
+	transition-duration: 5s; 
+	transition-timing-function: ease-in-out; 
+	position: relative; left: 80%; 
+	width: 8%;
+    background-color: red;
+    color: white;
+    padding: 5px 5px;
+}
+
+.transitieTiming:hover {
+    left: 0px;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.transitieDelay {
+	transition-property: top, left;
+	transition-duration: 2s, 1.5s;
+	transition-delay: .5s, 0s;
+	transition-timing-function: ease; 
+	position: relative; left: 0px; top:0px;
+	width: 8%;
+    padding: 5px 5px;
+    background-color: green;
+    color: black;
+}
+
+.transitieDelay:hover {
+    top: 100px;
+    left: 100px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+.animatie1, .animatie2, .animatie3 {
+
+	background: red;
+	position: relative;
+	width: 20%;
+	
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: opening-sequence;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+	animation-name: opening-sequence;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opening-sequence {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  50%{
+    top: -100px;
+    
+  }
+  
+  100% {
+    left: 80%;
+    top: 0px;
+  }
+}
+
+/* Standard syntax */
+@keyframes opening-sequence {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  80%{
+    top: 50px;
+  }
+  
+  50% {
+    left: 80%;
+    top: 0px;
+  }
+}
+
+.animatie2 {
+    background: blue;
+	position: relative;
+	width: 20%;
+    -webkit-animation-duration: 1s;
+	animation-duration: 1s;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.animatie3 {
+    
+    -webkit-animation-name: opening-sequence;
+    -webkit-animation-duration: 1s;
+    
+    animation-name: opening-sequence;
+	animation-duration: 5s;
+}
