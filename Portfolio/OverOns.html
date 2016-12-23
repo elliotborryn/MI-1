@@ -24,48 +24,89 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="home.html">Home</a></li>
                 <li><a class="active" href="OverOns.html">Over Ons</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Prijzen.html">Prijzen</a></li>
-                <li><a href="Jobs.html">Jobs</a></li>
+                <li><a href="Offerte.html">Offerte</a></li>
+                <!--<li><a href="Jobs.html">Jobs</a></li>-->
                 <li><a href="Fotos.html">Fotos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-
-       
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
 
     <!-- MAIN CONTENT -->
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>York Carpels</b></h4>
-            <i class="fa fa-envelope"><a> york@easyinstall.be</a></i>
-            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+    <div class="mainContent">
+
+        <div class="content">
+
+            <article class="firstContentOverOns">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">Over Ons</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install is een zelfstandig montagebedrijf en een gevestigde waarde in de binnenhuisinrichting. Met meer dan 30 jaar ervaring staan wij garant voor uitstekend advies en een perfecte afwerking, waardoor uw meubelen precies die klasse uitstralen die u voor ogen had.</p>
+                </content>
+            </article>
         </div>
     </div>
 
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>Benjamin Vanfraechem</b></h4>
-            <i class="fa fa-envelope"><a> benjamin@easyinstall.be</a></i>
-            <i class="fa fa-bell" aria-hidden="true"><a> 0412/345.678</a></i>
+    <div class="mainContent">
+
+        <div class="contentOverOns">
+
+            <article class="secondContentOverOns">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">Specificaties</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install brengt met veel enthousiasme haar professionele tijd door in meubelwinkels en decoratiezaken in elke prijsklasse. De nieuwe trends hebben voor ons geen geheimen, de kwaliteit en prijs evenmin. Easy Install helpt u met uw interieurdromen en uw budget, wij meten alles op en bieden u concrete plannen in kleur en kunnen indien gewenst zorgen voor de totaaluitvoering.</p>
+                </content>
+            </article>
+            <img src="img/gallery/bureau/easyInstall_office1.jpg">
         </div>
+    </div>
+    
+        
     </div>
 
 
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>Elliot Borryn</b></h4>
-            <i class="fa fa-envelope"><a> elliotborryn@gmail.com</a></i>
-            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+    <!--  
+    <div class="mainContent">
+
+        <div class="content">
+
+            <article class="sideContent">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">Flexibiliteit</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install is een zelfstandig.</p>
+                </content>
+            </article>
         </div>
     </div>
+    
+   -->
+
 
 
     <!-- END MAIN CONTENT -->
@@ -74,7 +115,7 @@
     <!-- FOOTER -->
 
     <footer class="mainFooter">
-        <p>Copyright &copy;<a href="index.html" title="Easy Install">Easy Install</a></p>
+        <p>Copyright &copy;<a href="home.html" title="Easy Install">Easy Install</a></p>
     </footer>
 </body>
 

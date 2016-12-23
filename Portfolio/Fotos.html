@@ -22,37 +22,54 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="OverOns.html">Over Ons</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Prijzen.html">Prijzen</a></li>
-                <li><a href="Jobs.html">Jobs</a></li>
+                <li><a href="Offerte.html">Offerte</a></li>
+                <!--<li><a href="Jobs.html">Jobs</a></li>-->
                 <li><a class="active" href="Fotos.html">Fotos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-
-          
         </nav>
     </header>
+
+<!-- Deze script vond ik beter uitkomen dan het gebruik van css, dit is nagenomen van een video -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
 
     <!-- SLIDE SHOW -->
     <div class="slideShow">
-        <img class="mySlides" src="img/GreenGrass.jpg" style="width:100%">
-        <img class="mySlides" src="img/NightWater.jpg" style="width:100%">
-        <img class="mySlides" src="img/RedDragon.jpg" style="width:100%">
-    </div>
+        <img class="mySlides" src="img/gallery/kitchen/easyInstall_Kitchen1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/kitchen/easyInstall_Kitchen2.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/bedroom/easyInstall_Bedroom1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/wardrobe/easyInstall_wardrobe1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/wardrobe/easyInstall_wardrobe2.jpg" style="width:100%">
+        
+    </div> 
     
     <div class="slideShowBtn">
         <button class="prevBtn" onclick="plusDivs(-1)">❮ Prev</button>
         <button class="nextBtn" onclick="plusDivs(1)">Next ❯</button>
     </div>
 
+<!-- Deze script werd nagenomen van een video, waar ik eerst heb proberen te begrijpen hoe dit in elkaar zit -->
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
 
-        function plusDivs(n) {
+        function plusDivs(n) { 
             showDivs(slideIndex += n);
         }
 
@@ -78,7 +95,7 @@
     <!-- FOOTER -->
 
     <footer class="mainFooter">
-        <p>Copyright &copy;<a href="index.html" title="Easy Install">Easy Install</a></p>
+        <p>Copyright &copy;<a href="home.html" title="Easy Install">Easy Install</a></p>
     </footer>
 </body>
 

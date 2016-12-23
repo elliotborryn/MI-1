@@ -12,7 +12,9 @@
     <link type="text/css" rel="stylesheet" href="css/EasyInstallDesign.css">
     <title>Easy Install: Photos</title>
     <!-- jQuery Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
 
 </head>
 
@@ -22,29 +24,44 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="aPropos.html">A propos</a></li>
                 <li><a href="contactFR.html">Contact</a></li>
-                <li><a href="prix.html">Prix</a></li>
-                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <!--<li><a href="vacatures.html">Vacatures</a></li>-->
                 <li><a class="active" href="photos.html">Photos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-
-          
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
 
     <!-- SLIDE SHOW -->
     <div class="slideShow">
-        <img class="mySlides" src="img/GreenGrass.jpg" style="width:100%">
-        <img class="mySlides" src="img/NightWater.jpg" style="width:100%">
-        <img class="mySlides" src="img/RedDragon.jpg" style="width:100%">
-    </div>
+        <img class="mySlides" src="img/gallery/kitchen/easyInstall_Kitchen1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/kitchen/easyInstall_Kitchen2.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/bedroom/easyInstall_Bedroom1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/wardrobe/easyInstall_wardrobe1.jpg" style="width:100%">
+        <img class="mySlides" src="img/gallery/wardrobe/easyInstall_wardrobe2.jpg" style="width:100%">
+        
+    </div> 
     
     <div class="slideShowBtn">
-        <button class="prevBtn" onclick="plusDivs(-1)">❮ Précédent</button>
+        <button class="prevBtn" onclick="plusDivs(-1)">❮ Précedent</button>
         <button class="nextBtn" onclick="plusDivs(1)">Suivant ❯</button>
     </div>
 
@@ -71,7 +88,6 @@
             x[slideIndex - 1].style.display = "block";
         }
     </script>
-
     <!-- END SLIDE SHOW -->
 
 

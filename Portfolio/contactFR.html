@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 
 <head>
     <meta charset="utf-8">
@@ -13,6 +13,8 @@
     <title>Easy Install: Contact</title>
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -22,92 +24,163 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="accueil.html">Accueil</a></li>
                 <li><a href="aPropos.html">A propos</a></li>
-                <li><a class="active" href="contactFR.html">Contact</a></li>
-                <li><a href="prix.html">Prix</a></li>
-                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a class="active" href="Contact.html">Contact</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <!--<li><a href="vacatures.html">Vacatures</a></li>-->
                 <li><a href="photos.html">Photos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-            
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
-    
-    <!-- FORMULIER -->
-    <form action="mailto:elliotborryn@gmail.com" method="post" class="form_d">
-        <fieldset>
-            <legend><h4>Contactez-nous</h4></legend>
-           
-            <div class="form_content">
-                <!-- Voornaam -->
-                <h5>Prénom</h5>
-                <!-- <lable for="Voornaam">Voornaam</lable> -->
-                <input type="text" id="Voornaam" name="Voornaam">
-                <br>
 
-                <!-- Achternaam -->
-                <h5>Nom de famille</h5>
-                <!--<lable for="Achternaam">Naam</lable>-->
-                <input type="text" id="Achternaam" name="Achternaam">
-                <br>
+    <div class="card1">
+        <img class="avatarImg" src="img/avatar2.png" alt="Avatar">
+        <div class="container">
+            <h4><b>York Carpels</b></h4>
+            <i class="fa fa-envelope"><a> york@easyinstall.be</a></i>
+            <br>
+            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+        </div>
+    </div>
 
-                <!-- Email -->
-                <h5>Adresse mail</h5>
-                <!--<lable for="email">Email</lable>-->
-                <input type="text" id="email" placeholder="pe. email@gmail.com" name="email">
-                <br>
+    <div class="card2">
+        <img class="avatarImg" src="img/avatar1.png" alt="Avatar">
+        <div class="container">
+            <h4><b>Benjamin Vanfraechem</b></h4>
+            <i class="fa fa-envelope"><a> benjamin@easyinstall.be</a></i>
+            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+        </div>
+    </div>
 
-                <!-- TelefoonNummer -->
-                <h5>Numéro de telephone</h5>
-                <!--<lable for="telnumber">Telefoon</lable>-->
-                <input type="tel" id="telnumber" placeholder="pe. 02 12 34 56" name="telnumber">
-                <br>
 
-                <!-- Beschrijving -->
-                <h5>Description</h5>
-                <textarea id="beschrijving" cols="25" rows="10" placeholder="Votre texte..."></textarea>
-                <br>
-                
-                <!-- Beschrijving Tags -->
-                <h5>Sujet</h5>
-                <input type="text" id="beschrijving" name="beschrijving" size="30" maxlength="90">
-                <br>
+    <div class="card">
+        <img class="avatarImg" src="img/avatar3.png" alt="Avatar">
+        <div class="container">
+            <h4><b>Katrien</b></h4>
+            <i class="fa fa-envelope"><a> katrien@easyinstall.be</a></i>
+            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+        </div>
+    </div>
 
-                <input id="submit" type="submit" value="Versturen"/>
-            </div>
-        </fieldset>
-    </form>
-    
-    <!-- Zijkant Formulier -->
+    <!-- Zijkant Formulier 
     <div class="SideForm">
         <div class="mainContentForm">
             <aside>
-                <h4>Venez prendre une visite!</h4>
+                <h4>Kom eens langs!</h4>
 
-                <h5>Numéro de telephone</h5>
+                <h5>Telefoonnummer</h5>
                 <p>02/36.36.36</p>
 
-                <h5>Adresse Mail</h5>
-                <p>example@easyinstall.be</p>
+                <h5>EMAIL</h5>
+                <p>easy@easyinstall.be</p>
 
-                <h5>Adresse</h5>
-                <p>Brixtonlaan X
-                Zaventem 1930</p>
+                <h5>Adres</h5>
+                <p>Brixtonlaan 1a | Zaventem 1930</p>
             </aside>
         </div>
     </div>
-   <!-- END FORMULIER -->
-    
-    
-    
-   
+    <!-- END FORMULIER -->
+
+    <!-- KOM EENS LANGS TABEL -->
+    <div class="infoTabel">
+        <div class="mainContentInfoTabel">
+            <tr>
+                <td>
+                    <h3>Numéro de telephone</h3></td>
+                <td>
+                    <h4>02/35.45.55</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Mail</h3></td>
+                <td>
+                    <h4>easy@easyinstall.be</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Adresse</h3></td>
+                <td>
+                    <h4>Brixtonlaan 1a  Zaventem 1930</h4></td>
+            </tr>
+        </div>
+
+
+            <!--
+    <div class="openingsuren"> -->
+        <div class="mainContentOpeningsuren"> 
+            <table class="openingsurenTabel">
+                <tr>
+                    <td>
+                        <h3>Lundi</h3></td>
+                    <td>
+                        <h4>09:00 - 16:00</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Mardi</h3></td>
+                    <td>
+                        <h4>09:00 - 16:00</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Mercredi</h3></td>
+                    <td>
+                        <h4>09:00 - 16:00</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Jeudi</h3></td>
+                    <td>
+                        <h4>09:00 - 16:00</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Vendredi</h3></td>
+                    <td>
+                        <h4>09:00 - 16:00</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Samedi</h3></td>
+                    <td>
+                        <h4>Fermé</h4></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Dimanche</h3></td>
+                    <td>
+                        <h4>Fermé</h4></td>
+                </tr>
+            </table>
+            </div>
+    </div>
+
+    <!-- END TABEL -->
+
+
+
     <!-- GOOGLE MAPS -->
     <div id="map">
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.843371047378!2d4.49873681550711!3d50.87109936484673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc24dafb1973%3A0x88d7c71efba3bccd!2sBrixtonlaan%2C+1930+Zaventem!5e0!3m2!1snl!2sbe!4v1479833373490" width="46%" height="328" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.905020719318!2d4.496294415663437!3d50.86995807953542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc3b2356d163%3A0x3a4a4a350e34de8!2sBrixtonlaan+1%2C+1930+Zaventem!5e0!3m2!1snl!2sbe!4v1481659816050" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </div>
     <!--
     <script>

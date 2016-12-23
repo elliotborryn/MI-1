@@ -13,6 +13,8 @@
     <title>Easy Install: Contact</title>
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -22,65 +24,65 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="OverOns.html">Over Ons</a></li>
                 <li><a class="active" href="Contact.html">Contact</a></li>
-                <li><a href="Prijzen.html">Prijzen</a></li>
-                <li><a href="Jobs.html">Jobs</a></li>
+                <li><a href="Offerte.html">Offerte</a></li>
+                <!--<li><a href="Jobs.html">Jobs</a></li>-->
                 <li><a href="Fotos.html">Fotos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-            
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
-    
-    <!-- FORMULIER -->
-    <form action="mailto:elliotborryn@gmail.com" method="post" class="form_d">
-        <fieldset>
-            <legend><h4>Contacteer Ons</h4></legend>
-           
-            <div class="form_content">
-                <!-- Voornaam -->
-                <h5>Voornaam</h5>
-                <!-- <lable for="Voornaam">Voornaam</lable> -->
-                <input type="text" id="Voornaam" name="Voornaam">
-                <br>
 
-                <!-- Achternaam -->
-                <h5>Naam</h5>
-                <!--<lable for="Achternaam">Naam</lable>-->
-                <input type="text" id="Achternaam" name="Achternaam">
+    <div class="cards">
+        <div class="card1">
+            <img class="avatarImg" src="img/avatar2.png" alt="Avatar">
+            <div class="container">
+                <h4><b>York Carpels</b></h4>
+                <i class="fa fa-envelope"><a> york@easyinstall.be</a></i>
                 <br>
-
-                <!-- Email -->
-                <h5>Email</h5>
-                <!--<lable for="email">Email</lable>-->
-                <input type="text" id="email" placeholder="bv. email@gmai.com" name="email">
-                <br>
-
-                <!-- TelefoonNummer -->
-                <h5>Telefoonnummer</h5>
-                <!--<lable for="telnumber">Telefoon</lable>-->
-                <input type="tel" id="telnumber" placeholder="bv. 02 12 34 56" name="telnumber">
-                <br>
-
-                <!-- Beschrijving -->
-                <h5>Beschrijving</h5>
-                <textarea id="beschrijving" cols="25" rows="10" placeholder="Schrijf hier uw tekst.."></textarea>
-                <br>
-                
-                <!-- Beschrijving Tags -->
-                <h5>Onderwerp</h5>
-                <input type="text" id="beschrijving" name="beschrijving" size="30" maxlength="90">
-                <br>
-
-                <input id="submit" type="submit" value="Versturen"/>
+                <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
             </div>
-        </fieldset>
-    </form>
-    
-    <!-- Zijkant Formulier -->
+        </div>
+
+        <div class="card2">
+            <img class="avatarImg" src="img/avatar1.png" alt="Avatar">
+            <div class="container">
+                <h4><b>Benjamin Vanfraechem</b></h4>
+                <i class="fa fa-envelope"><a> benjamin@easyinstall.be</a></i>
+                <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="avatarImg" src="img/avatar3.png" alt="Avatar">
+            <div class="container">
+                <h4><b>Katrien</b></h4>
+                <i class="fa fa-envelope"><a> katrien@easyinstall.be</a></i>
+                <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Zijkant Formulier 
     <div class="SideForm">
         <div class="mainContentForm">
             <aside>
@@ -90,24 +92,105 @@
                 <p>02/36.36.36</p>
 
                 <h5>EMAIL</h5>
-                <p>example@easyinstall.be</p>
+                <p>easy@easyinstall.be</p>
 
                 <h5>Adres</h5>
-                <p>Brixtonlaan X
-                Zaventem 1930</p>
+                <p>Brixtonlaan 1a | Zaventem 1930</p>
             </aside>
         </div>
     </div>
-   <!-- END FORMULIER -->
-    
-    
-    
-   
+    <!-- END FORMULIER -->
+
+    <!-- KOM EENS LANGS TABEL -->
+
+    <div class="UrenEnInfo">
+        <div class="infoEnUrenTabel">
+
+            <div class="infoTabel">
+                <div class="mainContentInfoTabel">
+                    <tr>
+                        <td>
+                            <h3>Telefoonnummer</h3></td>
+                        <td>
+                            <h4>02/35.45.55</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Email</h3></td>
+                        <td>
+                            <h4>easy@easyinstall.be</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Adres</h3></td>
+                        <td>
+                            <h4>Brixtonlaan 1a  Zaventem 1930</h4></td>
+                    </tr>
+                </div>
+
+
+                <!--
+    <div class="openingsuren"> -->
+                <div class="mainContentOpeningsuren">
+                    <table class="openingsurenTabel">
+                        <tr>
+                            <td>
+                                <h3>Maandag</h3></td>
+                            <td>
+                                <h4>09:00 - 16:00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Dinsdag</h3></td>
+                            <td>
+                                <h4>09:00 - 16:00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Woensdag</h3></td>
+                            <td>
+                                <h4>09:00 - 16:00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Donderdag</h3></td>
+                            <td>
+                                <h4>09:00 - 16:00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Vrijdag</h3></td>
+                            <td>
+                                <h4>09:00 - 16:00</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Zaterdag</h3></td>
+                            <td>
+                                <h4>Gesloten</h4></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>Zondag</h3></td>
+                            <td>
+                                <h4>Gesloten</h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- END TABEL -->
+
+
+
     <!-- GOOGLE MAPS -->
     <div id="map">
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.843371047378!2d4.49873681550711!3d50.87109936484673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc24dafb1973%3A0x88d7c71efba3bccd!2sBrixtonlaan%2C+1930+Zaventem!5e0!3m2!1snl!2sbe!4v1479833373490" width="46%" height="328" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.905020719318!2d4.496294415663437!3d50.86995807953542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dc3b2356d163%3A0x3a4a4a350e34de8!2sBrixtonlaan+1%2C+1930+Zaventem!5e0!3m2!1snl!2sbe!4v1481659816050" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </div>
     <!--
     <script>
@@ -127,7 +210,7 @@
     <!-- FOOTER -->
 
     <footer class="mainFooter">
-        <p>Copyright &copy;<a href="index.html" title="Easy Install">Easy Install</a></p>
+        <p>Copyright &copy;<a href="home.html" title="Easy Install">Easy Install</a></p>
     </footer>
 </body>
 

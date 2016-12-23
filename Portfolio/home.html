@@ -9,7 +9,7 @@
     <!-- Title Icon of Favicon -->
     <link rel="shortcut icon" href="img/EasyInstallLogoBE.png">
     <!-- CSS SHEET -->
-    <link type="text/css" rel="stylesheet" href="css/EasyInstallDesign.css"> 
+    <link rel="stylesheet" type="text/css" href="css/EasyInstallDesign.css">
     <title>Easy Install: Home</title>
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -22,34 +22,47 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a class="active" href="home.html">Home</a></li>
                 <li><a href="OverOns.html">Over Ons</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Prijzen.html">Prijzen</a></li>
-                <li><a href="Jobs.html">Jobs</a></li>
+                <li><a href="Offerte.html">Offerte</a></li>
+                <!--<li><a href="Jobs.html">Jobs</a></li>-->
                 <li><a href="Fotos.html">Fotos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-
-            
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
 
     <!-- MAIN CONTENT -->
     <div class="mainContent">
 
         <div class="content">
-
             <article class="firstContent">
                 <header>
-                    <h2 class="HeaderTitle"><a title="#">Easy Install</a></h2>
+                    <h2 class="HeaderTitle"><a title="#">Easy Install, Welkom</a></h2>
                 </header>
 
                 <content>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    <p>"U heeft net een fraaie kast gekocht, of meer nog, u staat op het punt een hele meubelinterieur aan te schaffen? Goed dat u even langs Easy Install passeert. Installatie van meubelen is precisiewerk. Het vergt kennis van zaken en flik wat gespecialiseerd materiaal. De hele uitstraling en levensduur van uw interieur hangt er van af."</p>
                 </content>
+
             </article>
+
         </div>
     </div>
     <!-- SIDE BAR PROBLEM
@@ -60,32 +73,44 @@
                 </article>
             </aside>
     -->
+
     <div class="mainContent">
 
-        <div class="content">
+        <div class="contentTwo">
 
             <article class="secondContent">
                 <header>
-                    <h2 class="HeaderTitle"><a title="#">Easy Install</a></h2>
+                    <h2 class="HeaderTitle"><a title="#">Onze Services</a></h2>
                 </header>
 
                 <content>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    <p>Easy Install is flexibel. U kunt bij ons terecht voor:</p>
+                    <ul>
+                        <li>Inspiratie, advies, voorbereiding, aankoop, transport, montage en decoratie.</li>
+                        <li>Van een klein meubel over een grote keuken tot en met einddecoratie.</li>
+                        <li>Voor alle merken en leveranciers.</li>
+                        <li>Uitsluitend met kwalitatief hoofstaande dienstverlening.</li>
+                    </ul>
                 </content>
             </article>
+            <img src="img/modernKitchen.jpg">
         </div>
+
     </div>
+
+
     <div class="mainContent">
 
         <div class="content">
 
             <article class="thirdContent">
                 <header>
-                    <h2 class="HeaderTitle"><a title="#">Easy Install</a></h2>
+                    <h2 class="HeaderTitle"><a title="#">Keuken, Meubels, Renovatie,...</a></h2>
                 </header>
 
                 <content>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                    <p>Wat het ook is, u kunt altijd bij ons terecht met uw vragen. Voor een gratis offerte klikt u <a href="Offerte.html">hier</a>.
+                        <br>U kunt ook altijd eens langskomen, bellen of een mailtje sturen via <a href="Contact.html">contact</a></p>
                 </content>
             </article>
         </div>

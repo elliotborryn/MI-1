@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="beschrijving van de webpagina">
+    <meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title Icon of Favicon -->
+    <link rel="shortcut icon" href="img/EasyInstallLogoBE.png">
+    <!-- CSS SHEET -->
+    <link type="text/css" rel="stylesheet" href="css/EasyInstallDesign.css">
+    <title>Easy Install: Offerte</title>
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body class="body">
+
+    <!-- MAIN HEADER -->
+    <header class="mainHeader">
+        <img src="img/EasyInstallBEShadow.png">
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="OverOns.html">Over Ons</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a class="active" href="Offerte.html">Offerte</a></li>
+                <!--<li><a href="Jobs.html">Jobs</a></li>-->
+                <li><a href="Fotos.html">Fotos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <!-- END MAIN HEADER -->
+    
+        <!-- FORMULIER -->
+    <form action="mailto:elliotborryn@gmail.com" method="post" class="form_d">
+        <fieldset>
+            <legend>
+                <h4>Contacteer Ons</h4></legend>
+
+            <div class="form_content">
+                <!-- Voornaam -->
+                <h5>Voornaam</h5>
+                <!-- <lable for="Voornaam">Voornaam</lable> -->
+                <input type="text" id="Voornaam" name="Voornaam">
+                <br>
+
+                <!-- Achternaam -->
+                <h5>Naam</h5>
+                <!--<lable for="Achternaam">Naam</lable>-->
+                <input type="text" id="Achternaam" name="Achternaam">
+                <br>
+
+                <!-- Email -->
+                <h5>Email</h5>
+                <!--<lable for="email">Email</lable>-->
+                <input type="text" id="email" placeholder="bv. email@gmai.com" name="email">
+                <br>
+
+                <!-- TelefoonNummer -->
+                <h5>Telefoonnummer</h5>
+                <!--<lable for="telnumber">Telefoon</lable>-->
+                <input type="tel" id="telnumber" placeholder="bv. 02 12 34 56" name="telnumber">
+                <br>
+
+                <!-- Beschrijving Tags -->
+                <h5>Onderwerp</h5>
+                <select id="soort" name="soort">
+                    <option disabled selected="selected">Kies Onderwerp</option>
+                    <option>Ik heb een klacht</option>
+                    <option>Ik heb een suggestie</option>
+                    <option>Ik heb een vraag</option>
+                </select>
+                <br>
+                
+
+                <!-- Beschrijving -->
+                <h5>Beschrijving</h5>
+                <textarea id="beschrijving" cols="25" rows="10" placeholder="Schrijf hier uw tekst.."></textarea>
+                <br>
+
+
+
+                <input id="submit" type="submit" value="Versturen" />
+            </div>
+        </fieldset>
+    </form>
+
+   
+
+    <!-- FOOTER -->
+
+    <footer class="mainFooter">
+        <p>Copyright &copy;<a href="home.html" title="Easy Install">Easy Install</a></p>
+    </footer>
+</body>
+
+</html>

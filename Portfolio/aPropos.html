@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/EasyInstallLogoBE.png">
     <!-- CSS SHEET -->
     <link type="text/css" rel="stylesheet" href="css/EasyInstallDesign.css">
-    <title>Easy Install: A propos</title>
+    <title>Easy Install: A Propos</title>
     <!-- jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,48 +24,87 @@
     <header class="mainHeader">
         <img src="img/EasyInstallBEShadow.png">
         <nav>
-            <ul id="menu1">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="accueil.html">Accueil</a></li>
-                <li><a class="active" href="accueil.html">A propos</a></li>
+                <li><a class="active" href="aPropos.html">A propos</a></li>
                 <li><a href="contactFR.html">Contact</a></li>
-                <li><a href="prix.html">Prix</a></li>
-                <li><a href="vacatures.html">Vacatures</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <!--<li><a href="vacatures.html">Vacatures</a></li>-->
                 <li><a href="photos.html">Photos</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+                </li>
             </ul>
-
-       
         </nav>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
     <!-- END MAIN HEADER -->
 
     <!-- MAIN CONTENT -->
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>York Carpels</b></h4>
-            <i class="fa fa-envelope"><a> york@easyinstall.be</a></i>
-            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+    <div class="mainContent">
+
+        <div class="content">
+
+            <article class="firstContentOverOns">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">A propos de nous</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install est une société d'installation indépendante et une valeur établie dans la décoration intérieure. Avec plus de 30 ans d'expérience nous garantissons d'excellents conseils et une finition parfaite, ce qui rend vos meubles rayonnent exactement classe que vous aviez en tête.</p>
+                </content>
+            </article>
         </div>
     </div>
+    
+    <div class="mainContent">
 
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>Benjamin Vanfraechem</b></h4>
-            <i class="fa fa-envelope"><a> benjamin@easyinstall.be</a></i>
-            <i class="fa fa-bell" aria-hidden="true"><a> 0412/345.678</a></i>
+        <div class="contentOverOns">
+
+            <article class="secondContentOverOns">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">Specificaties</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install brengt met veel enthousiasme haar professionele tijd door in meubelwinkels en decoratiezaken in elke prijsklasse. De nieuwe trends hebben voor ons geen geheimen, de kwaliteit en prijs evenmin. Easy Install helpt u met uw interieurdromen en uw budget, wij meten alles op en bieden u concrete plannen in kleur en kunnen indien gewenst zorgen voor de totaaluitvoering.</p>
+                </content>
+            </article>
+            <img src="img/gallery/bureau/easyInstall_office1.jpg">
         </div>
     </div>
+    
+        
+    </div>
+  <!--  
+    <div class="mainContent">
 
+        <div class="content">
 
-    <div class="card">
-        <img src="img/york.jpg" alt="Avatar">
-        <div class="container">
-            <h4><b>Elliot Borryn</b></h4>
-            <i class="fa fa-envelope"><a> elliotborryn@gmail.com</a></i>
-            <i class="fa fa-phone" aria-hidden="true"><a> 0412/345.678</a></i>
+            <article class="sideContent">
+                <header>
+                    <h2 class="HeaderTitle"><a title="#">Flexibiliteit</a></h2>
+                </header>
+
+                <content>
+                    <p>Easy Install is een zelfstandig.</p>
+                </content>
+            </article>
         </div>
     </div>
+    
+   --> 
+    
 
 
     <!-- END MAIN CONTENT -->
